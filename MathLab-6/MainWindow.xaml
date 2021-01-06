@@ -1,0 +1,44 @@
+﻿<Window x:Class="MathLab_6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Button 
+            Grid.Row="0" 
+            Grid.Column="1" 
+            Name="ButtonHelper" 
+            Click="ButtonHelper_OnClick" 
+            Margin="16 16 16 4" 
+            Padding="4">Помощь</Button>
+        <TextBlock 
+            Grid.Row="0" 
+            Grid.Column="0" 
+            Margin="16 16 16 4">Уравнение: </TextBlock>
+        <TextBox 
+            Grid.Row="1" 
+            Grid.Column="0" 
+            Grid.ColumnSpan="2" 
+            Name="TextBoxView" 
+            Margin="16 4 16 8" 
+            Padding="4"></TextBox>
+        <Button 
+            Grid.Row="2" 
+            Grid.Column="1" 
+            Click="ButtonBase_OnClick" 
+            Margin="16 8 16 8" 
+            Padding="4">Решить</Button>
+    </Grid>
+</Window>
